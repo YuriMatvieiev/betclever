@@ -1,0 +1,78 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.spollers__title {
+  list-style: none;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+.title {
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 600;
+  font-size: rem(20);
+  line-height: math.div(26, 20);
+}
+.results-gray {
+  padding-top: 20px;
+  background: #f4f4f4;
+}
+.resent-results {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.green-button {
+  border-radius: 100px;
+  border: 1px solid $green;
+  color: $green;
+  font-size: rem(12);
+  line-height: math.div(16, 12);
+  text-transform: uppercase;
+  @media (max-width: $mobileSmall) {
+    text-transform: capitalize;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      border: 1px solid #2a6337;
+    }
+  }
+  &.active {
+    background-color: $green;
+    color: #fff;
+  }
+}
+.green-light-card {
+  background: #027b5b;
+  color: #fff;
+  .cards__title {
+    span {
+      color: #ffc912;
+    }
+  }
+  ._icon-star-full {
+    color: #ffc912;
+  }
+}
+.green-dark-card {
+  background: #1c4734;
+  color: #fff;
+  .cards__title {
+    span {
+      color: #ffc912;
+    }
+  }
+  ._icon-star-full {
+    color: #ffc912;
+  }
+}
+.orange-card {
+  background: #ffb808;
+  color: $mainColor;
+  .cards__title {
+    span {
+      color: $mainColor;
+    }
+  }
+  ._icon-star-full {
+    color: #fff;
+  }
+}
