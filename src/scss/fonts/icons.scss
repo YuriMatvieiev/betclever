@@ -15,8 +15,14 @@
   }
 }
 
-._icon-star-05:before {
+._icon-star-05 .path1:before {
   content: "\e903";
+  color: rgb(144, 144, 144);
+}
+._icon-star-05 .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 201, 18);
 }
 ._icon-star-full:before {
   content: "\e904";

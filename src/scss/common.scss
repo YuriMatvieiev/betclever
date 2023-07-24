@@ -42,37 +42,32 @@
 }
 .green-light-card {
   background: #027b5b;
-  color: #fff;
-  .cards__title {
-    span {
-      color: #ffc912;
-    }
-  }
-  ._icon-star-full {
-    color: #ffc912;
-  }
 }
 .green-dark-card {
   background: #1c4734;
-  color: #fff;
-  .cards__title {
-    span {
-      color: #ffc912;
-    }
-  }
-  ._icon-star-full {
-    color: #ffc912;
-  }
 }
 .orange-card {
   background: #ffb808;
-  color: $mainColor;
+  color: $mainColor !important;
   .cards__title {
     span {
-      color: $mainColor;
+      color: $mainColor !important;
     }
   }
   ._icon-star-full {
-    color: #fff;
+    color: #fff !important;
   }
+}
+
+.gray-dark-card {
+  background: #262d35;
+}
+.black-card {
+  background: #000;
+}
+.red-card {
+  background: #cd0a0a;
+}
+.blue-card {
+  background: #001f60;
 }
