@@ -1054,6 +1054,187 @@
     }
   }
 }
-.gray-bg {
-  background: #f4f4f4;
+
+.match-stats {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // .match-stats__container
+  &__container {
+  }
+  // .match-stats__header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: rem(20);
+    @media (max-width: $mobile) {
+      justify-content: center;
+    }
+  }
+  &__title-mobile {
+    display: none;
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: rem(20);
+    }
+  }
+  // .match-stats__comand
+  &__comand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  // .match-stats__comand-name
+  &__comand-name {
+    @include adaptiveValue("font-size", 20, 16);
+    @include adaptiveValue("line-height", 26, 22);
+
+    font-weight: 600;
+    @media (max-width: $mobile) {
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  // .match-stats__wrap
+  &__wrap {
+    display: flex;
+    gap: 20px;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  // .match-stats__card
+  &__card {
+    width: calc(100% / 2 - 10px);
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+  // .match-stats__card-item
+  &__card-item {
+    display: flex;
+    &:not(:last-child) {
+      border-bottom: 1px solid #e0e0e0;
+    }
+  }
+  // .match-stats__card-vs
+  &__card-vs {
+    padding: 20px;
+    font-size: rem(12);
+    line-height: math.div(16, 12);
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    @media (max-width: $tablet) {
+      padding: 20px 10px;
+    }
+    @media (max-width: $mobile) {
+      padding: 20px;
+      width: calc(100% / 3);
+    }
+  }
+  // .match-stats__card-score
+  &__card-score {
+    padding: 20px;
+    font-size: rem(12);
+    line-height: math.div(16, 12);
+    font-weight: 700;
+    text-transform: uppercase;
+    @include adaptiveValue("max-width", 103, 80, 0, 1216, 767.98);
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    @media (max-width: $tablet) {
+      padding: 20px 10px;
+    }
+    @media (max-width: $mobile) {
+      padding: 20px;
+      width: calc(100% / 3);
+      max-width: unset;
+    }
+  }
+  // .match-stats__card-wld
+  &__card-wld {
+    padding: 20px;
+    font-size: rem(12);
+    line-height: math.div(16, 12);
+    font-weight: 700;
+    text-transform: uppercase;
+    @include adaptiveValue("max-width", 103, 80, 0, 1216, 767.98);
+    width: 100%;
+    text-align: center;
+    @media (max-width: $tablet) {
+      padding: 20px 10px;
+    }
+    @media (max-width: $mobile) {
+      padding: 20px;
+      width: calc(100% / 3);
+      max-width: unset;
+    }
+  }
+  // .match-stats__card-country
+  &__card-country {
+    width: 100%;
+    padding: 20px;
+    @include adaptiveValue("font-size", 16, 12);
+    @include adaptiveValue("line-height", 22, 16);
+    text-transform: uppercase;
+    @media (max-width: $tablet) {
+      padding: 20px 10px;
+    }
+    @media (max-width: $mobile) {
+      padding: 20px;
+      width: calc(100% / 3);
+    }
+  }
+  // .match-stats__card-score-number
+  &__card-score-number {
+    padding: 20px;
+    @include adaptiveValue("max-width", 103, 80, 0, 1216, 767.98);
+    width: 100%;
+    text-align: center;
+    @include adaptiveValue("font-size", 16, 12);
+    @include adaptiveValue("line-height", 22, 16);
+    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    @media (max-width: $tablet) {
+      padding: 20px 10px;
+    }
+    @media (max-width: $mobile) {
+      padding: 20px;
+      width: calc(100% / 3);
+      max-width: unset;
+    }
+  }
+  // .match-stats__card-result
+  &__card-result {
+    padding: 20px;
+    @include adaptiveValue("max-width", 103, 80, 0, 1216, 767.98);
+    width: 100%;
+    text-align: center;
+    @include adaptiveValue("font-size", 16, 12);
+    @include adaptiveValue("line-height", 22, 16);
+    @media (max-width: $tablet) {
+      padding: 20px 10px;
+    }
+    @media (max-width: $mobile) {
+      padding: 20px;
+      width: calc(100% / 3);
+      max-width: unset;
+    }
+  }
 }

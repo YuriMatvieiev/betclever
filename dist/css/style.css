@@ -265,6 +265,22 @@ h6 {
   background: #001f60;
 }
 
+.gray-bg {
+  background: #f4f4f4;
+}
+
+.win {
+  color: #57b76d;
+}
+
+.loss {
+  color: #703c3c;
+}
+
+.draw {
+  color: #ffc912;
+}
+
 .header__container {
   position: relative;
 }
@@ -1463,8 +1479,122 @@ h6 {
   text-transform: uppercase;
 }
 
-.gray-bg {
-  background: #f4f4f4;
+.match-stats {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.match-stats__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1.25rem;
+}
+
+.match-stats__title-mobile {
+  display: none;
+}
+
+.match-stats__comand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.match-stats__comand img {
+  width: 30px;
+  height: 30px;
+}
+
+.match-stats__comand-name {
+  font-weight: 600;
+}
+
+.match-stats__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.match-stats__card {
+  width: calc(50% - 10px);
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+}
+
+.match-stats__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.match-stats__card-item:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.match-stats__card-vs {
+  padding: 20px;
+  font-size: 0.75rem;
+  line-height: 1.3333333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.match-stats__card-score {
+  padding: 20px;
+  font-size: 0.75rem;
+  line-height: 1.3333333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
+
+.match-stats__card-wld {
+  padding: 20px;
+  font-size: 0.75rem;
+  line-height: 1.3333333333;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.match-stats__card-country {
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.match-stats__card-score-number {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
+
+.match-stats__card-result {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .swiper {
@@ -1785,6 +1915,38 @@ h6 {
   .match-history__item-numbers {
     line-height: 1.375rem;
   }
+
+  .match-stats__comand-name {
+    font-size: 1.25rem;
+  }
+
+  .match-stats__comand-name {
+    line-height: 1.625rem;
+  }
+
+  .match-stats__card-country {
+    font-size: 1rem;
+  }
+
+  .match-stats__card-country {
+    line-height: 1.375rem;
+  }
+
+  .match-stats__card-score-number {
+    font-size: 1rem;
+  }
+
+  .match-stats__card-score-number {
+    line-height: 1.375rem;
+  }
+
+  .match-stats__card-result {
+    font-size: 1rem;
+  }
+
+  .match-stats__card-result {
+    line-height: 1.375rem;
+  }
 }
 
 @media (min-width: 76em) {
@@ -1814,6 +1976,22 @@ h6 {
 
   .cards__left {
     max-width: 21.875rem;
+  }
+
+  .match-stats__card-score {
+    max-width: 6.4375rem;
+  }
+
+  .match-stats__card-wld {
+    max-width: 6.4375rem;
+  }
+
+  .match-stats__card-score-number {
+    max-width: 6.4375rem;
+  }
+
+  .match-stats__card-result {
+    max-width: 6.4375rem;
   }
 }
 
@@ -2002,6 +2180,30 @@ h6 {
 
   .match-history__wrap-7 .match-history__item {
     width: calc(33.3333333333% - 14px);
+  }
+
+  .match-stats__card-vs {
+    padding: 20px 10px;
+  }
+
+  .match-stats__card-score {
+    padding: 20px 10px;
+  }
+
+  .match-stats__card-wld {
+    padding: 20px 10px;
+  }
+
+  .match-stats__card-country {
+    padding: 20px 10px;
+  }
+
+  .match-stats__card-score-number {
+    padding: 20px 10px;
+  }
+
+  .match-stats__card-result {
+    padding: 20px 10px;
   }
 }
 
@@ -2237,6 +2439,97 @@ h6 {
     padding: 18px 10px;
     border-top: none;
     border-left: 1px solid #e0e0e0;
+  }
+
+  .match-stats__header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .match-stats__title-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1.25rem;
+  }
+
+  .match-stats__comand-name {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .match-stats__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .match-stats__card {
+    width: 100%;
+  }
+
+  .match-stats__card-vs {
+    padding: 20px;
+    width: 33.3333333333%;
+  }
+
+  .match-stats__card-score {
+    max-width: 5rem;
+  }
+
+  .match-stats__card-score {
+    padding: 20px;
+    width: 33.3333333333%;
+    max-width: unset;
+  }
+
+  .match-stats__card-wld {
+    max-width: 5rem;
+  }
+
+  .match-stats__card-wld {
+    padding: 20px;
+    width: 33.3333333333%;
+    max-width: unset;
+  }
+
+  .match-stats__card-country {
+    padding: 20px;
+    width: 33.3333333333%;
+  }
+
+  .match-stats__card-score-number {
+    max-width: 5rem;
+  }
+
+  .match-stats__card-score-number {
+    padding: 20px;
+    width: 33.3333333333%;
+    max-width: unset;
+  }
+
+  .match-stats__card-result {
+    max-width: 5rem;
+  }
+
+  .match-stats__card-result {
+    padding: 20px;
+    width: 33.3333333333%;
+    max-width: unset;
   }
 }
 
@@ -2537,6 +2830,38 @@ h6 {
   }
 
   .match-history__item-numbers {
+    line-height: 1rem;
+  }
+
+  .match-stats__comand-name {
+    font-size: 1rem;
+  }
+
+  .match-stats__comand-name {
+    line-height: 1.375rem;
+  }
+
+  .match-stats__card-country {
+    font-size: 0.75rem;
+  }
+
+  .match-stats__card-country {
+    line-height: 1rem;
+  }
+
+  .match-stats__card-score-number {
+    font-size: 0.75rem;
+  }
+
+  .match-stats__card-score-number {
+    line-height: 1rem;
+  }
+
+  .match-stats__card-result {
+    font-size: 0.75rem;
+  }
+
+  .match-stats__card-result {
     line-height: 1rem;
   }
 }
@@ -3297,6 +3622,102 @@ h6 {
       line-height: calc(1rem + 0.375 * (100vw - 23.4375rem) / 56.4375);
     }
 }
+
+@supports (font-size: clamp( 1rem , 0.896179402rem  +  0.4429678848vw , 1.25rem )) {
+    .match-stats__comand-name {
+      font-size: clamp( 1rem , 0.896179402rem  +  0.4429678848vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.896179402rem  +  0.4429678848vw , 1.25rem )) {
+    .match-stats__comand-name {
+      font-size: calc(1rem + 0.25 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+
+@supports (line-height: clamp( 1.375rem , 1.271179402rem  +  0.4429678848vw , 1.625rem )) {
+    .match-stats__comand-name {
+      line-height: clamp( 1.375rem , 1.271179402rem  +  0.4429678848vw , 1.625rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.375rem , 1.271179402rem  +  0.4429678848vw , 1.625rem )) {
+    .match-stats__comand-name {
+      line-height: calc(1.375rem + 0.25 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem )) {
+    .match-stats__card-country {
+      font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem )) {
+    .match-stats__card-country {
+      font-size: calc(0.75rem + 0.25 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+
+@supports (line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem )) {
+    .match-stats__card-country {
+      line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem )) {
+    .match-stats__card-country {
+      line-height: calc(1rem + 0.375 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem )) {
+    .match-stats__card-score-number {
+      font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem )) {
+    .match-stats__card-score-number {
+      font-size: calc(0.75rem + 0.25 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+
+@supports (line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem )) {
+    .match-stats__card-score-number {
+      line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem )) {
+    .match-stats__card-score-number {
+      line-height: calc(1rem + 0.375 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem )) {
+    .match-stats__card-result {
+      font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.646179402rem  +  0.4429678848vw , 1rem )) {
+    .match-stats__card-result {
+      font-size: calc(0.75rem + 0.25 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+
+@supports (line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem )) {
+    .match-stats__card-result {
+      line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.844269103rem  +  0.6644518272vw , 1.375rem )) {
+    .match-stats__card-result {
+      line-height: calc(1rem + 0.375 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
 }
 
 @media (max-width: 61.99875em) and (min-width: 79.875em) {
@@ -3547,6 +3968,56 @@ h6 {
 @supports not (gap: clamp( 0.3125rem , -0.0768272425rem  +  1.6611295681vw , 1.25rem )) {
     .cards__card {
       gap: calc(0.3125rem + 0.9375 * (100vw - 23.4375rem) / 56.4375);
+    }
+}
+}
+
+@media (min-width: 47.99875em) and (max-width: 76em) {
+@supports (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-score {
+      max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem );
+    }
+}
+
+@supports not (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-score {
+      max-width: calc(5rem + 1.4375 * (100vw - 47.99875rem) / 28.00125);
+    }
+}
+
+@supports (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-wld {
+      max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem );
+    }
+}
+
+@supports not (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-wld {
+      max-width: calc(5rem + 1.4375 * (100vw - 47.99875rem) / 28.00125);
+    }
+}
+
+@supports (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-score-number {
+      max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem );
+    }
+}
+
+@supports not (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-score-number {
+      max-width: calc(5rem + 1.4375 * (100vw - 47.99875rem) / 28.00125);
+    }
+}
+
+@supports (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-result {
+      max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem );
+    }
+}
+
+@supports not (max-width: clamp( 5rem , 2.5358884648rem  +  5.1336993884vw , 6.4375rem )) {
+    .match-stats__card-result {
+      max-width: calc(5rem + 1.4375 * (100vw - 47.99875rem) / 28.00125);
     }
 }
 }
