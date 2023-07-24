@@ -10,30 +10,7 @@ export const images = () => {
 			}))
 		)
 		.pipe(app.plugins.newer(app.path.build.images))
-		.pipe(
-			app.plugins.if(
-				app.isWebP,
-				webp()
-			)
-		)
-		.pipe(
-			app.plugins.if(
-				app.isWebP,
-				app.gulp.dest(app.path.build.images)
-			)
-		)
-		.pipe(
-			app.plugins.if(
-				app.isWebP,
-				app.gulp.src(app.path.src.images)
-			)
-		)
-		.pipe(
-			app.plugins.if(
-				app.isWebP,
-				app.plugins.newer(app.path.build.images)
-			)
-		)
+
 		.pipe(
 			app.plugins.if(
 				app.isImgOpt,
